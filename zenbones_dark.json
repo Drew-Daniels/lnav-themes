@@ -1,332 +1,331 @@
 {
-    "$schema": "https://lnav.org/schemas/config-v1.schema.json",
-    "ui": {
-        "theme-defs": {
-            "zenbones": {
-                "vars": {
-                    "black": "#1C1917",
-                    "red": "#DE6E7C",
-                    "green": "#819B69",
-                    "yellow": "#B77E64",
-                    "blue": "#6099C0",
-                    "magenta": "#B279A7",
-                    "cyan": "#66A5AD",
-                    "white": "#B4BDC3",
-                    "orange": "#D68C67",
-                    "semantic_highlight_color": "semantic()"
-                },
-                "styles": {
-                    "identifier": {
-                        "color": "semantic()"
-                    },
-                    "text": {
-                        "color": "$white",
-                        "background-color": "$black"
-                    },
-                    "selected-text": {
-                        "background-color": "#3D4042"
-                    },
-                    "fuzzy-match": {
-                        "color": "$magenta",
-                        "underline": true,
-                        "bold": true
-                    },
-                    "alt-text": {
-                        "background-color": "#25211F"
-                    },
-                    "ok": {
-                        "color": "$green",
-                        "bold": true
-                    },
-                    "info": {
-                        "color": "$blue",
-                        "bold": true
-                    },
-                    "error": {
-                        "color": "$red",
-                        "bold": true
-                    },
-                    "warning": {
-                        "color": "$yellow",
-                        "bold": true
-                    },
-                    "hidden": {
-                        "color": "$yellow",
-                        "bold": true
-                    },
-                    "cursor-line": {
-                        "color": "$white",
-                        "background-color": "#25211F",
-                        "bold": true
-                    },
-                    "disabled-cursor-line": {
-                        "color": "#888F94",
-                        "background-color": "#25211F"
-                    },
-                    "adjusted-time": {
-                        "color": "$magenta"
-                    },
-                    "skewed-time": {
-                        "color": "$yellow"
-                    },
-                    "offset-time": {
-                        "color": "$cyan"
-                    },
-                    "time-column": {
-                        "background-color": "#403833"
-                    },
-                    "file-offset": {
-                        "color": "#685F5A"
-                    },
-                    "invalid-msg": {
-                        "color": "$yellow"
-                    },
-                    "focused": {
-                        "color": "$black",
-                        "background-color": "$white"
-                    },
-                    "disabled-focused": {
-                        "color": "#888F94",
-                        "background-color": "#403833"
-                    },
-                    "popup": {
-                        "color": "$white",
-                        "background-color": "#302B29"
-                    },
-                    "popup-border": {
-                        "color": "#837771",
-                        "background-color": "#302B29"
-                    },
-                    "scrollbar": {
-                        "color": "$black",
-                        "background-color": "#685F5A"
-                    },
-                    "h1": {
-                        "color": "$magenta",
-                        "bold": true
-                    },
-                    "h2": {
-                        "color": "$magenta",
-                        "underline": true
-                    },
-                    "h3": {
-                        "color": "$magenta"
-                    },
-                    "h4": {
-                        "underline": true
-                    },
-                    "h5": {
-                        "italic": true
-                    },
-                    "h6": {
-                        "italic": true
-                    },
-                    "hr": {
-                        "color": "#403833"
-                    },
-                    "hyperlink": {
-                        "underline": true
-                    },
-                    "list-glyph": {
-                        "color": "$yellow"
-                    },
-                    "breadcrumb": {
-                        "color": "$orange",
-                        "bold": true
-                    },
-                    "table-border": {
-                        "color": "#403833"
-                    },
-                    "table-header": {
-                        "bold": true
-                    },
-                    "quote-border": {
-                        "color": "#685F5A",
-                        "background-color": "#302B29"
-                    },
-                    "quoted-text": {
-                        "background-color": "#302B29"
-                    },
-                    "footnote-border": {
-                        "color": "$blue",
-                        "background-color": "#302B29"
-                    },
-                    "footnote-text": {
-                        "color": "$white",
-                        "background-color": "#302B29"
-                    },
-                    "snippet-border": {
-                        "color": "$cyan"
-                    },
-                    "indent-guide": {
-                        "color": "#2B2725"
-                    }
-                },
-                "syntax-styles": {
-                    "inline-code": {
-                        "color": "$red",
-                        "background-color": "#25211F"
-                    },
-                    "quoted-code": {
-                        "color": "$white",
-                        "background-color": "#25211F"
-                    },
-                    "code-border": {
-                        "color": "#403833",
-                        "background-color": "#25211F"
-                    },
-                    "object-key": {
-                        "color": "semantic()"
-                    },
-                    "keyword": {
-                        "color": "$white",
-                        "bold": true
-                    },
-                    "string": {
-                        "color": "#868C91",
-                        "italic": true
-                    },
-                    "comment": {
-                        "color": "#6E6763",
-                        "italic": true
-                    },
-                    "doc-directive": {
-                        "color": "$green"
-                    },
-                    "variable": {
-                        "color": "#979FA4"
-                    },
-                    "symbol": {
-                        "color": "$cyan"
-                    },
-                    "re-special": {
-                        "color": "$cyan"
-                    },
-                    "re-repeat": {
-                        "color": "$yellow"
-                    },
-                    "diff-delete": {
-                        "color": "$red"
-                    },
-                    "diff-add": {
-                        "color": "$green"
-                    },
-                    "diff-section": {
-                        "color": "#867A74"
-                    },
-                    "spectrogram-low": {
-                        "color": "$black",
-                        "background-color": "$green",
-                        "bold": true
-                    },
-                    "spectrogram-medium": {
-                        "color": "$black",
-                        "background-color": "$yellow",
-                        "bold": true
-                    },
-                    "spectrogram-high": {
-                        "color": "$black",
-                        "background-color": "$red",
-                        "bold": true
-                    },
-                    "file": {
-                        "color": "$blue"
-                    },
-                    "null": {
-                        "color": "#888F94"
-                    },
-                    "ascii-control": {
-                        "color": "$green"
-                    },
-                    "non-ascii": {
-                        "color": "$yellow"
-                    },
-                    "number": {
-                        "color": "#868C91"
-                    },
-                    "function": {
-                        "color": "$white"
-                    },
-                    "separators-references-accessors": {
-                        "color": "#867A74"
-                    },
-                    "type": {
-                        "color": "#A1938C"
-                    }
-                },
-                "status-styles": {
-                    "disabled-title": {
-                        "color": "$blue",
-                        "background-color": "#352F2D",
-                        "bold": true
-                    },
-                    "title": {
-                        "color": "$white",
-                        "background-color": "#352F2D",
-                        "bold": true
-                    },
-                    "subtitle": {
-                        "color": "#867A74",
-                        "background-color": "#66A5AD",
-                        "bold": true
-                    },
-                    "info": {
-                        "color": "#888F94",
-                        "background-color": "#272321"
-                    },
-                    "title-hotkey": {
-                        "color": "$black",
-                        "background-color": "#352F2D",
-                        "underline": true
-                    },
-                    "hotkey": {
-                        "color": "$white",
-                        "underline": true
-                    },
-                    "text": {
-                        "color": "$white",
-                        "background-color": "#352F2D"
-                    },
-                    "warn": {
-                        "color": "$yellow",
-                        "background-color": "#352F2D"
-                    },
-                    "alert": {
-                        "color": "$red",
-                        "background-color": "#352F2D"
-                    },
-                    "active": {
-                        "color": "$green",
-                        "background-color": "#352F2D"
-                    },
-                    "inactive": {
-                        "color": "#685F5A",
-                        "background-color": "#272321"
-                    },
-                    "inactive-alert": {
-                        "color": "$red",
-                        "background-color": "#272321"
-                    },
-                    "suggestion": {
-                        "color": "#888F94"
-                    }
-                },
-                "log-level-styles": {
-                    "warning": {
-                        "color": "$yellow"
-                    },
-                    "error": {
-                        "color": "$red"
-                    },
-                    "critical": {
-                        "color": "$red"
-                    },
-                    "fatal": {
-                        "color": "$red"
-                    }
-                }
-            }
+  "$schema": "https://lnav.org/schemas/config-v1.schema.json",
+  "ui": {
+    "theme-defs": {
+      "zenbones-dark": {
+        "vars": {
+          "black": "#1C1917",
+          "red": "#DE6E7C",
+          "green": "#819B69",
+          "yellow": "#B77E64",
+          "blue": "#6099C0",
+          "magenta": "#B279A7",
+          "cyan": "#66A5AD",
+          "white": "#B4BDC3",
+          "orange": "#D68C67",
+          "semantic_highlight_color": "semantic()"
+        },
+        "styles": {
+          "identifier": {
+            "color": "semantic()"
+          },
+          "text": {
+            "color": "$white",
+            "background-color": "$black"
+          },
+          "selected-text": {
+            "background-color": "#3D4042"
+          },
+          "fuzzy-match": {
+            "color": "$magenta",
+            "underline": true,
+            "bold": true
+          },
+          "alt-text": {
+            "background-color": "#25211F"
+          },
+          "ok": {
+            "color": "$green",
+            "bold": true
+          },
+          "info": {
+            "color": "$blue",
+            "bold": true
+          },
+          "error": {
+            "color": "$red",
+            "bold": true
+          },
+          "warning": {
+            "color": "$yellow",
+            "bold": true
+          },
+          "hidden": {
+            "color": "$yellow",
+            "bold": true
+          },
+          "cursor-line": {
+            "color": "$white",
+            "background-color": "#25211F",
+            "bold": true
+          },
+          "disabled-cursor-line": {
+            "color": "#888F94",
+            "background-color": "#25211F"
+          },
+          "adjusted-time": {
+            "color": "$magenta"
+          },
+          "skewed-time": {
+            "color": "$yellow"
+          },
+          "offset-time": {
+            "color": "$cyan"
+          },
+          "time-column": {
+            "background-color": "#403833"
+          },
+          "file-offset": {
+            "color": "#685F5A"
+          },
+          "invalid-msg": {
+            "color": "$yellow"
+          },
+          "focused": {
+            "color": "$black",
+            "background-color": "$white"
+          },
+          "disabled-focused": {
+            "color": "#888F94",
+            "background-color": "#403833"
+          },
+          "popup": {
+            "color": "$white",
+            "background-color": "#302B29"
+          },
+          "popup-border": {
+            "color": "#837771",
+            "background-color": "#302B29"
+          },
+          "scrollbar": {
+            "color": "$black",
+            "background-color": "#685F5A"
+          },
+          "h1": {
+            "color": "$magenta",
+            "bold": true
+          },
+          "h2": {
+            "color": "$magenta",
+            "underline": true
+          },
+          "h3": {
+            "color": "$magenta"
+          },
+          "h4": {
+            "underline": true
+          },
+          "h5": {
+            "italic": true
+          },
+          "h6": {
+            "italic": true
+          },
+          "hr": {
+            "color": "#403833"
+          },
+          "hyperlink": {
+            "underline": true
+          },
+          "list-glyph": {
+            "color": "$yellow"
+          },
+          "breadcrumb": {
+            "color": "$orange",
+            "bold": true
+          },
+          "table-border": {
+            "color": "#403833"
+          },
+          "table-header": {
+            "bold": true
+          },
+          "quote-border": {
+            "color": "#685F5A",
+            "background-color": "#302B29"
+          },
+          "quoted-text": {
+            "background-color": "#302B29"
+          },
+          "footnote-border": {
+            "color": "$blue",
+            "background-color": "#302B29"
+          },
+          "footnote-text": {
+            "color": "$white",
+            "background-color": "#302B29"
+          },
+          "snippet-border": {
+            "color": "$cyan"
+          },
+          "indent-guide": {
+            "color": "#2B2725"
+          }
+        },
+        "syntax-styles": {
+          "inline-code": {
+            "color": "$red",
+            "background-color": "#25211F"
+          },
+          "quoted-code": {
+            "color": "$white",
+            "background-color": "#25211F"
+          },
+          "code-border": {
+            "color": "#403833",
+            "background-color": "#25211F"
+          },
+          "object-key": {
+            "color": "semantic()"
+          },
+          "keyword": {
+            "color": "$white",
+            "bold": true
+          },
+          "string": {
+            "color": "#868C91",
+            "italic": true
+          },
+          "comment": {
+            "color": "#6E6763",
+            "italic": true
+          },
+          "doc-directive": {
+            "color": "$green"
+          },
+          "variable": {
+            "color": "#979FA4"
+          },
+          "symbol": {
+            "color": "$cyan"
+          },
+          "re-special": {
+            "color": "$cyan"
+          },
+          "re-repeat": {
+            "color": "$yellow"
+          },
+          "diff-delete": {
+            "color": "$red"
+          },
+          "diff-add": {
+            "color": "$green"
+          },
+          "diff-section": {
+            "color": "#867A74"
+          },
+          "spectrogram-low": {
+            "color": "$black",
+            "background-color": "$green",
+            "bold": true
+          },
+          "spectrogram-medium": {
+            "color": "$black",
+            "background-color": "$yellow",
+            "bold": true
+          },
+          "spectrogram-high": {
+            "color": "$black",
+            "background-color": "$red",
+            "bold": true
+          },
+          "file": {
+            "color": "$blue"
+          },
+          "null": {
+            "color": "#888F94"
+          },
+          "ascii-control": {
+            "color": "$green"
+          },
+          "non-ascii": {
+            "color": "$yellow"
+          },
+          "number": {
+            "color": "#868C91"
+          },
+          "function": {
+            "color": "$white"
+          },
+          "separators-references-accessors": {
+            "color": "#867A74"
+          },
+          "type": {
+            "color": "#A1938C"
+          }
+        },
+        "status-styles": {
+          "disabled-title": {
+            "color": "$blue",
+            "background-color": "#352F2D",
+            "bold": true
+          },
+          "title": {
+            "color": "$white",
+            "background-color": "#352F2D",
+            "bold": true
+          },
+          "subtitle": {
+            "color": "#867A74",
+            "background-color": "#66A5AD",
+            "bold": true
+          },
+          "info": {
+            "color": "#888F94",
+            "background-color": "#272321"
+          },
+          "title-hotkey": {
+            "color": "$black",
+            "background-color": "#352F2D",
+            "underline": true
+          },
+          "hotkey": {
+            "color": "$white",
+            "underline": true
+          },
+          "text": {
+            "color": "$white",
+            "background-color": "#352F2D"
+          },
+          "warn": {
+            "color": "$yellow",
+            "background-color": "#352F2D"
+          },
+          "alert": {
+            "color": "$red",
+            "background-color": "#352F2D"
+          },
+          "active": {
+            "color": "$green",
+            "background-color": "#352F2D"
+          },
+          "inactive": {
+            "color": "#685F5A",
+            "background-color": "#272321"
+          },
+          "inactive-alert": {
+            "color": "$red",
+            "background-color": "#272321"
+          },
+          "suggestion": {
+            "color": "#888F94"
+          }
+        },
+        "log-level-styles": {
+          "warning": {
+            "color": "$yellow"
+          },
+          "error": {
+            "color": "$red"
+          },
+          "critical": {
+            "color": "$red"
+          },
+          "fatal": {
+            "color": "$red"
+          }
         }
+      }
     }
+  }
 }
-
